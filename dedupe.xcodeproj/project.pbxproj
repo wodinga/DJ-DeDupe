@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		F9C36B6628BDCE4800F1AA2D /* dedupe */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dedupe; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C36B6928BDCE4800F1AA2D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F9C36B7028BDD01900F1AA2D /* dedupe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = dedupe.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +58,7 @@
 		F9C36B6828BDCE4800F1AA2D /* dedupe */ = {
 			isa = PBXGroup;
 			children = (
+				F9C36B7028BDD01900F1AA2D /* dedupe.entitlements */,
 				F9C36B6928BDCE4800F1AA2D /* main.swift */,
 			);
 			path = dedupe;
@@ -243,9 +245,11 @@
 		F9C36B6E28BDCE4800F1AA2D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = dedupe/dedupe.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U399TLZYHU;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -254,9 +258,11 @@
 		F9C36B6F28BDCE4800F1AA2D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = dedupe/dedupe.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U399TLZYHU;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
